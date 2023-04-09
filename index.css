@@ -4,6 +4,10 @@ body {
     margin: 0;
     font-family: "Arial", sans-serif;
 }
+@media (max-width: 390px) {
+
+    .desktop-visible { display: block; margin: 0 auto; }
+}    
 
 button {
     border: none;
@@ -13,7 +17,7 @@ button {
     display: flex;
     width: 80%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 70px;
     /* justify-content: space-around; */
 }
 
@@ -51,8 +55,8 @@ li {
         align-items: center;
         /* justify-content: flex-end; */
         border-radius: 20px;
-        width: 120%;
-        height: 100%;
+        width: 80%;
+        height: 80%;
         margin-top: 4px;
         /* padding-top: 2px;
         padding-bottom: 2px;
@@ -81,11 +85,11 @@ div {
     flex-direction: column;
     justify-content: space-around;
     background-color: #F1F1F1;
-    height: 90vh;
+    height: 110vh;
 }
 
 .section-welcome .content {
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -94,36 +98,53 @@ div {
 }
 .content {
     width: 80%;
-    margin: auto;
     display: flex;
+    justify-content: center;
     font-weight: 400;
-    height: 100vh;
+    height: 140%;
 }
 
 .content-image img {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 600;
-    height: 380px;
-    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 280px;
+    border-radius: 40px;
     margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
+.parag-first {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 50px;
+    inline-size: 80%;
+    margin-bottom: 30px;
+}
 .content-texts .p {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    text-align: center;
     font-weight: inherit;
     font-size: 16px;
+    inline-size: 55%;
+    margin-left: 50px;
 }
 
 .content-size {
     display: flex;
     font-size: 25px;
     font-weight: bold;
-    font-size: 54px;
-    margin-bottom: 40px;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    inline-size: 85%;
+    /* margin-left: 50px; */
 }
 
 .howitworks {
@@ -131,6 +152,7 @@ div {
     flex-direction: column;
     background-color: #E1DEE7;
     border-radius: 20px;
+    height: 100vh;
 }
 .content-button .howitworks{
     color: rgb(248, 244, 244);
@@ -143,15 +165,18 @@ div {
     padding-right: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-top: 50px;
+    margin-left: 170px;
+    margin-top: 10px;
 }
 
 .page2 {
     margin-top: 15px;
     align-items: center;
+    height: 100vh;
+
 }
 .page2-header {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 900;
     display: flex;
     width: 100%;
@@ -173,18 +198,20 @@ div {
 
 .second-page {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    margin-left: 120px;
-    justify-content: space-between;
+    margin-left: 0;
+    justify-content: flex-start;
     margin-top: 55px;
     margin-right: 120px;
-    margin-bottom: 40px;
+    padding-bottom: 60px;
+    margin-bottom: 20px;
+
 }
 .numbers-and-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
 }
 .numbers-and-text img {
     display: flex;
@@ -196,7 +223,7 @@ div {
 .numbers-and-text2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
 }
 .numbers-and-text2 img {
     display: flex;
@@ -207,7 +234,7 @@ div {
 .numbers-and-text3 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
 }
 .numbers-and-text3 img {
     display: flex;
@@ -250,25 +277,26 @@ div {
 .page3 .page3-parag {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    margin-left: 120px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 0;
     align-items: center;
-    font-size: 45px;
+    font-size: 24px;
     font-weight: bolder;
 }
 
 .page3 .page3-parag2 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    text-align: center;
     margin-left: 120px;
     align-items: center;
     font-size: 15px;
-    inline-size: 45%;
+    inline-size: 55%;
 }
 .text-field__icon {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     margin-left: 120px;
 }
@@ -277,12 +305,14 @@ div {
     display: flex;
     flex-direction: row;
     height: 50px;
-    width: 550px;
+    width: 70%;
     border-radius: 10px;
     align-items: center;
+    text-align: center;
     border: 0;
     opacity: 60%;
-    
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .find-job {
@@ -290,40 +320,49 @@ div {
     background-color: #712FFF;
     display: flex; 
     flex-direction: column;
-    width: 100px;
-    height: 50px;
+    justify-content: center;
+    text-align: center;
+    width: 35%;
+    height: 7vh;
     border-radius: 30px;
-    margin-left: 30px;
-    padding-left: 16%;
-    padding-top: 8%;
+    margin-left: 60px;
+    padding-top: 6%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+.cv-upload {
+    display: flex;
+    background-color: #F1F1F1;
+    flex-direction: column;
 }
 
 .cv-texts {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    text-align: left;
+    margin-left: 80px;
+    margin-bottom: 40px;
 }
 .text-cv {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
-    font-size: 45px;
+    font-size: 24px;
     font-weight: bolder;;
 }
 
-.cv-upload {
-    display: flex;
-    background-color: #F1F1F1;
-}
+
 .cv-image img {
     display: flex;
     flex-direction: column;
-    margin-left: 120px;
+    margin-left: 80px;
     margin-right: 50px;
-    border-radius: 20px;
-    width: 600px;
-    height: 420px;
+    border-radius: 30px;
+    width: 350px;
+    height: 240px;
     margin-bottom: 50px;
 }
 
@@ -364,40 +403,41 @@ div {
     align-items: left;
     background-color: white;
     border-radius: 20px;
-    height: 100%;
+    width: 80%;
 }
 .icons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     width: 24px;
     height: 24px;
+    margin-top: 20px;
 }
 .last-menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     font-size: 14px;
     margin-top: 30px;
-    margin-left: 110px;
+    margin-left: 55px;
 }
 .last-text {
     color: #081E34;
     font-size: 14px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 0;
-    margin-left: 120px;
+    margin-top: 50px;
+    margin-left: 4px;
     opacity: 50%;
 }
 
 .with-love {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
     color: black;
     font-size: 14px;
-    margin-right: 130px;
+    margin-left: 90px;
 }
